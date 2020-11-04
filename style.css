@@ -1,0 +1,108 @@
+@font-face {
+    src: url(./Fonts/CGFLocustResistance.ttf);
+    font-family: 'Locust';
+}
+
+* {
+    font-family: 'Locust';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.score-board {
+    border: 3px solid black;
+    border-radius: 00.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    padding: 1rem;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-counter {
+    color: green;
+}
+
+.attempts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attempts-counter {
+    color: red;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 0.5rem;
+    border: 3px solid black;
+    background-color: red;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    padding: 0.5rem;
+}
+
+.memory-card {
+    border: 1px solid black;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 240px;
+    width: 241px;
+}
+
+.front-face {
+    position: absolute;
+    height: 240px;
+    width: 241px;
+}
+
+.back-face {
+    position: absolute;
+    height: 240px;
+    width: 241px;
+}
+
+.flip {
+    z-index: 10;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+#logo {
+    font-size: 12rem;
+    color: red;
+}
